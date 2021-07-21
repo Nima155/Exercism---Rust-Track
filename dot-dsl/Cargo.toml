@@ -5,3 +5,5 @@ version = "0.1.0"
 
 [dependencies]
 maplit = "1.0.1"
+with_attrs = { path = "./with_attrs" }
+with_attrs_derive = { path = "./with_attrs/with_attrs_derive" }
