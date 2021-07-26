@@ -1,8 +1,6 @@
 use std::collections::HashMap;
-use with_attrs_derive::Attrs;
 use with_attrs::Attrs;
-
-
+use with_attrs_derive::Attrs;
 
 #[derive(Clone, PartialEq, Attrs, Debug)]
 pub struct Node {
@@ -19,8 +17,7 @@ impl Node {
     pub fn get_attr(&self, attribute_to_find: &str) -> Option<&str> {
         match self.attrs.get(attribute_to_find) {
             Some(k) => Some(&k[..]),
-            None => None
+            None => None,
         }
-        
     }
 }

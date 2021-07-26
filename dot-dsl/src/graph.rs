@@ -9,8 +9,8 @@ use crate::node::Node;
 pub mod graph_items {
     pub use crate::edge; // re-exporting, as in making the module availabe to outsiders
     pub use crate::node;
-    pub use with_attrs_derive::Attrs;
     pub use with_attrs::Attrs;
+    pub use with_attrs_derive::Attrs;
 }
 
 #[derive(Attrs)]
@@ -33,7 +33,6 @@ impl Graph {
             nodes: vec_of_nodes.clone(),
             ..self
         }
-        
     }
     pub fn with_edges(self, vec_of_edges: &Vec<Edge>) -> Self {
         Self {
