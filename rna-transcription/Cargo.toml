@@ -2,3 +2,6 @@
 edition = "2018"
 name = "rna-transcription"
 version = "1.0.0"
+
+[dependencies]
+new_attr = {path = "new_attr"}
